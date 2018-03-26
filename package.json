@@ -1,0 +1,34 @@
+{
+  "name": "TDD",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "webpack",
+    "eslint": "./node_modules/eslint/bin/eslint.js ./lib/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricMellow/TDD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EricMellow/TDD/issues"
+  },
+  "homepage": "https://github.com/EricMellow/TDD#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.18.2",
+    "mocha": "^5.0.4"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "webpack": "^4.1.1"
+  }
+}
