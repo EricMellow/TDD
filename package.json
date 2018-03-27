@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "babel": "^6.23.0",
+    "chai-sorted": "^0.2.0",
     "webpack": "^4.1.1"
   }
 }

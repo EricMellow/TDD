@@ -1,6 +1,9 @@
 const arrayGenerator = require('../test/array-generator.js');
 const bubbleSort = require('../lib/bubbleSort.js');
-const assert = require('chai').assert;
+const chai = require('chai');
+const assert = chai.assert;
+const expect = chai.expect;
+chai.use(require("chai-sorted"));
 
 describe('bubbleSort', () => {
 
@@ -37,11 +40,11 @@ describe('bubbleSort', () => {
   });
 
   it('should sort a very large array', () => {
-    const thisArray = arrayGenerator(11000);
+    const thisArray = arrayGenerator(10000);
 
     let sortedArray = bubbleSort(thisArray);
 
-    assert.deepEqual(sortedArray, thisArray.sort());
+    expect(sortedArray).to.be.sorted()
   });
 
 });

@@ -7,4 +7,4 @@ function arrayGenerator(length) {
   return array;
 }
 
-module.exports = arrayGenerator
+module.exports = arrayGenerator;
