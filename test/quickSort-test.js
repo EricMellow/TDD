@@ -8,11 +8,11 @@ chai.use(require("chai-sorted"));
 describe('quickSort', () => {
 
   it('should sort a small array of numbers', () => {
-    const thisArray = [5, 4, 3, 2, 1, 9, 8, 7, 6];
+    const thisArray = [5, 4, -3, 2, 1, 9, 8, 7, 6];
 
     let sortedArray = quickSort(thisArray);
 
-    assert.deepEqual(sortedArray, [1, 2, 3, 4, 5, 6, 7, 8, 9]);
+    assert.deepEqual(sortedArray, [-3, 1, 2, 4, 5, 6, 7, 8, 9]);
   });
 
   it('should sort a small array of numbers with duplicate values', () => {
@@ -39,8 +39,8 @@ describe('quickSort', () => {
     assert.deepEqual(sortedArray, ['a', 'b', 'c', 'c', 'd', 'e', 'f', 'g', 'h', 'h', 'i', 'j']);
   });
 
-  it.only('should sort a very large array', () => {
-    const thisArray = arrayGenerator(80000);
+  it('should sort a very large array', () => {
+    const thisArray = arrayGenerator(70000);
 
     let sortedArray = quickSort(thisArray);
 

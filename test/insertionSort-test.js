@@ -8,11 +8,11 @@ chai.use(require("chai-sorted"));
 describe('insertionSort', () => {
 
   it('should sort a small array of numbers', () => {
-    const thisArray = [5, 4, 3, 2, 1, 9, 8, 7, 6];
+    const thisArray = [5, 4, -3, 2, 1, 9, 8, 7, 6];
 
     let sortedArray = insertionSort(thisArray);
 
-    assert.deepEqual(sortedArray, [1, 2, 3, 4, 5, 6, 7, 8, 9]);
+    assert.deepEqual(sortedArray, [-3, 1, 2, 4, 5, 6, 7, 8, 9]);
   });
 
   it('should sort a small array of numbers with duplicate values', () => {
